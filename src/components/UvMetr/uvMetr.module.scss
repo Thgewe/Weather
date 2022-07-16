@@ -1,0 +1,45 @@
+.metr {
+    width: 170px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    & .inner {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        background-color: #eee;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    & .outer {
+        position: absolute;
+        top: 30%;
+        left: 10px;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .number {
+            display: inline-block;
+            padding-bottom: 40px;
+            font-size: 36px;
+            font-weight: 500;
+        }
+    }
+    & .fill {
+        transition: all 0.3s;
+        position: absolute;
+        top: 51%;
+        left: -25%;
+        transform-origin: top center;
+        transform: rotate(0deg);
+        width: 150%;
+        height: 100%;
+        background-color: #ffb900;
+    }
+}

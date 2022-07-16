@@ -1,0 +1,26 @@
+.card {
+    width: 200px;
+    height: 160px;
+    background-color: white;
+    box-shadow: 0 0 20px 5px #eee;
+    border-radius: 16px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    & .center {
+        flex: 2;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    & .title {
+        font-size: 18px;
+        color: #c5c7cc;
+        justify-self: flex-start;
+    }
+    & .descr {
+        font-size: 18px;  
+        justify-self: flex-end;
+    }
+}
