@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .left {
+        font-weight: 500;
+        font-size: 28px;
+        color: #bbbbbb;
+        display: flex;
+        gap: 20px;
+        user-select: none;
+        transition: all 01s;
+        & div:not(.active) {
+            cursor: pointer;
+            
+            &:hover {
+                color: #000;
+            }
+        }
+        & .active {
+            color: #000;
+        }
+    }
+
+    & .right {
+        display: flex;
+        gap: 10px;
+    }
+}

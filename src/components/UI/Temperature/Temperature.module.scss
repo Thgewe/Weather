@@ -1,0 +1,7 @@
+.temp {
+  display: flex;
+  align-items: flex-start;
+  & span {
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,35 @@
+.dia {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  position: relative;
+  & .track {
+    width: 100%;
+    position: absolute;
+    cursor: grab;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    user-select: none;
+    -webkit-box-shadow: 0px 0px 32px 1px rgba(7, 7, 7, 0.05);
+    -moz-box-shadow: 0px 0px 32px 1px rgba(7, 7, 7, 0.05);
+    box-shadow: 0px 0px 32px 1px rgba(7, 7, 7, 0.05);
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    //max-width: 640px;
+  }
+  @media screen and (min-width: 1200px) {
+    //max-width: 640px;
+  }
+}

@@ -1,0 +1,15 @@
+.wind {
+  width: 120px;
+  padding-top: 5px;
+  text-align: center;
+  & span {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  & .arrow {
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+  }
+}

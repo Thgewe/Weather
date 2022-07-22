@@ -1,7 +1,10 @@
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    gap: 20px;
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+
     @media screen and (min-width: 768px) {
         & {
             
@@ -9,12 +12,12 @@
     }
     @media screen and (min-width: 992px) {
         & {
-            grid-template-columns: repeat(3, 200px);
-            gap: 20px;
+            
         }
     }
     @media screen and (min-width: 1200px) {
         & {
+            gap: 20px;
         }
     }
 }
